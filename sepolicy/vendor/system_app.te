@@ -13,3 +13,6 @@ binder_call(system_app, wificond)
 
 # Aware
 get_prop(system_app, vendor_aware_available_prop);
+
+# Allow KProfiles to be adjusted by a system app
+allow system_app sysfs_kprofiles:file rw_file_perms;
