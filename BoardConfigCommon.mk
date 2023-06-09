@@ -189,6 +189,9 @@ SOONG_CONFIG_NAMESPACES += xiaomiSm8350Vars
 SOONG_CONFIG_xiaomiSm8350Vars += vibrator_use_effect_stream
 SOONG_CONFIG_xiaomiSm8350Vars_vibrator_use_effect_stream ?= false
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # Touch
 SOONG_CONFIG_NAMESPACES += XIAOMI_TOUCH
 SOONG_CONFIG_XIAOMI_TOUCH := HIGH_TOUCH_POLLING_PATH
